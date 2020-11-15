@@ -1,0 +1,16 @@
+.collection-page{
+    padding: 5px 60px 70px;
+    .title{
+        margin: 50px auto 25px;
+        font-size: 28px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .items{
+        display: grid;
+        grid-template-columns:repeat(4, 1fr) ;
+        column-gap: 12px;
+        row-gap: 70px;
+        justify-items: center;
+    }
+}

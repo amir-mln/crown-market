@@ -1,0 +1,7 @@
+.SignInUpPage{
+    width: 860;
+    display: grid;
+    grid-template-areas: 'sign-in sign-up';
+    justify-content: space-evenly;
+    margin: 75px auto;
+}

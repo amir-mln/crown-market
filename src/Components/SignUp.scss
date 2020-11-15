@@ -1,0 +1,12 @@
+.sign-up-component{
+    width: 380px;
+    grid-area: sign-up;
+    // margin-left: 100px;
+    h2{
+        text-transform: uppercase;
+    }
+    .buttons{
+        display:flex;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,13 @@
+.sign-in-component{
+    width: 380px;
+    grid-area: sign-in;
+    // justify-self: end;
+    // padding-left: 100px;
+    h2{
+        text-transform: uppercase;
+    }
+    .buttons{
+        display:flex;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,55 @@
+.shipment-page{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 70% minmax(30%, 1fr);
+    grid-template-rows: 450px 150px;
+    column-gap: 20px;
+    row-gap: 50px;
+    grid-template-areas: 
+    "sp-form info-box"
+    "progress-bar progress-bar";
+    justify-content: center;
+    
+    .shipment-form{
+        grid-area: sp-form;
+    }
+    .progress-indicator{
+        grid-area: progress-bar;
+    }
+    
+    .error{
+        text-align: center;
+        h2{
+            font-size: 38px;
+        }
+        .link{
+            color: blue;
+        }
+    }
+}
+
+.ReactModalPortal{
+    .ReactModal__Overlay{
+        width: 100vw;
+        height: 100vh;
+        
+        .ReactModal__Content{
+            margin: auto;
+            display: flex;
+            max-width: 50vw;
+            max-height: fit-content;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            #modal-text{
+                text-transform: uppercase;
+                &:hover{
+                    color: darkblue;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

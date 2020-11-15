@@ -1,0 +1,105 @@
+.progress-bar{
+    margin-bottom: 100px;
+    ul{
+        text-align: center;
+        li{
+            display: inline-block;
+            width: 400px;
+            position: relative;
+            .utf-icon{
+                background-color: #fff;
+                color: #555;
+                border: 1px dashed #555;
+                border-radius: 90%;
+                padding: 1px 5px 3px;
+                &.active{
+                    background-color: #fff;
+                    color: black;
+                    border: 1px solid black;
+                    border-radius: 90%;
+                    padding: 1px 5px 3px;
+                }
+            }
+            &:first-child .utf-icon{
+                &::after{
+                    content: '';
+                    background-color: #999;
+                    border: solid #999 1px;
+                    width: 200px;
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 119px;
+                    z-index: -1;
+                }
+                &.step-two{
+                    &::after{
+                        background-color: black;
+                        border: solid black 1px;
+                    }
+                }
+            }
+            &:nth-child(2) .utf-icon{
+                &::before{
+                    content: '';
+                    background-color: #999;
+                    border: solid #999 1px;
+                    width: 200px;
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 119px;
+                    z-index: -1;
+                }
+                &::after{
+                    content: '';
+                    background-color: #999;
+                    border: solid #999 1px;
+                    width: 200px;
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 119px;
+                    z-index: -1;
+                }
+                &.step-two{
+                    &::before{
+                        background-color: black;
+                        border: solid black 1px;
+                    }
+                }
+                &.step-three{
+                    &::after{
+                        background-color: black;
+                        border: solid black 1px;
+                    }
+                }
+            }
+            &:last-child .utf-icon{
+                &::before{
+                    content: '';
+                    background-color: #999;
+                    border: solid #999 1px;
+                    width: 200px;
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 119px;
+                    z-index: -1;
+                }
+                &.step-three{
+                    &::before{
+                        background-color: black;
+                        border: solid black 1px;
+                    }
+                }
+            }
+            .label-text{
+                text-transform: uppercase;
+            }
+            .icon{
+                width: 50px;
+            }
+        }
+    }
+}
